@@ -11,8 +11,9 @@ from aiogram.contrib.fsm_storage.memory import MemoryStorage
 
 logging.basicConfig(level=logging.INFO)
 
-bot = Bot(API_TOKEN)
+bot = Bot(API_TOKEN, proxy='http://proxy.server:3128')
 dp = Dispatcher(bot,storage=MemoryStorage())
+
 
 
 
