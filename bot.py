@@ -143,9 +143,8 @@ async def callback(call: types.CallbackQuery):
     elif call_data == 'schoolm_2':
         media_group = MediaGroup()
         media_group.attach({"type": "video", "media": InputFile("videos/video2.mp4"), "caption": "Преподаватели"})
-        media_group.attach({"type": "video", "media": InputFile("videos/video3.mp4")})
-        media_group.attach({"type": "video", "media": InputFile("videos/video4.mp4")})
-        media_group.attach({"type": "video", "media": InputFile("videos/video5.mp4")})
+        
+        
 
         await bot.send_media_group(chat_id=call.from_user.id, media=media_group)
     elif call_data == 'schoolm_3':
@@ -156,7 +155,7 @@ async def callback(call: types.CallbackQuery):
     elif call_data == 'schoolm_4':
         media_group = MediaGroup()
         media_group.attach({"type": "video", "media": InputFile("videos/video7.mp4"), "caption": "Работы учеников \n(Ozi 4ta video edi telegram limiti bor ekan)"})
-        media_group.attach({"type": "video", "media": InputFile("videos/video8.mp4")})
+       
 
         await bot.send_media_group(chat_id=call.from_user.id, media=media_group)
     elif call_data == 'otziv_1':
@@ -167,10 +166,10 @@ async def callback(call: types.CallbackQuery):
     elif call_data == 'otziv_2':
         media_group = MediaGroup()
         media_group.attach({"type": "video", "media": InputFile("videos/video12.mp4"), "caption": "работы учеников 14-16 лет"})
-        media_group.attach({"type": "video", "media": InputFile("videos/video13.mp4")})
+        
         await bot.send_media_group(chat_id=call.from_user.id, media=media_group)
 
-       
+
 
 
 
